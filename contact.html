@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | IT VALA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="../home/index.html" class="logo">IT VALA<span>.</span></a>
+        
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../work/index.html">Work</a></li>
+            <li><a href="index.html" class="active">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="mob-menu-btn">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <main class="contact-wrapper">
+        <div class="contact-grid">
+            <div class="contact-details">
+                <h1>Let's Start a <span>Project.</span></h1>
+                <p>Form bhariye aur details mere email par bhejiye. Main aapse jald hi contact karunga.</p>
+                
+                <div class="contact-methods">
+                    <a href="https://wa.me/yournumber" class="method-card glass-card">
+                        <i data-lucide="message-circle"></i>
+                        <div>
+                            <span>WhatsApp</span>
+                            <p>Direct Chat</p>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com/yourusername" class="method-card glass-card" target="_blank">
+                        <i data-lucide="instagram"></i>
+                        <div>
+                            <span>Instagram</span>
+                            <p>@yourusername</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form-container glass-card">
+                <form action="/api/contact" method="POST" id="contact-form">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-box">
+                        <select name="service">
+                            <option value="Web Development">Web Development</option>
+                            <option value="Designing">Designing</option>
+                            <option value="Logo Maker">Logo Maker</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" id="submit-btn">Send Message ⚡</button>
+                    <p id="form-status" style="margin-top:15px; text-align:center; font-weight:600;"></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

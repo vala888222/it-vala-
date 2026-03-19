@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT VALA | Creative Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">IT VALA<span>.</span></a>
+        
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="btn-primary login-btn" id="login-open-btn" style="padding: 0.5rem 1.5rem; margin-left: 0.5rem;">Login</button></li>
+        </ul>
+
+        <div class="hamburger" id="mob-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <!-- Awesome 3D Glow Orbs added for Aesthetic Vibe -->
+        <div class="glow-orb-1"></div>
+        <div class="glow-orb-2"></div>
+
+        <div class="hero-content">
+            <h1 class="reveal-text">Design<span>.</span> Build<span>.</span> <br>Grow<span>.</span></h1>
+            <p>High-end IT Solutions, Web Development, and Digital Strategy targeting modern brand requirements.</p>
+            <div class="cta-group">
+                <a href="#work" class="btn-primary">Get Started</a>
+                <a href="#contact" class="btn-secondary">Learn More <i data-lucide="arrow-right"></i></a>
+            </div>
+            
+            <!-- Styled like the NFT stats from the image -->
+            <div class="hero-stats">
+                <div>
+                    <h4>50+</h4>
+                    <span>Projects</span>
+                </div>
+                <div>
+                    <h4>100%</h4>
+                    <span>Satisfaction</span>
+                </div>
+                <div>
+                    <h4>24/7</h4>
+                    <span>Support</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- The beautiful visual block styled like the NFT card but for IT Vala -->
+        <div class="hero-visual">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Hero Tech" class="main-portrait">
+            </div>
+            <div class="eth-card" style="padding: 1.5rem 3rem; text-align: center;">
+                <h3 style="margin: 0; font-size: 2.5rem; letter-spacing: 2px; color: #D4E95E; font-family:'Syne', sans-serif;">IT VALA</h3>
+            </div>
+        </div>
+    </header>
+
+    <section class="work-section" id="work">
+        <header class="work-intro">
+            <h1>Selected Projects<span>.</span></h1>
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="design">Designing</button>
+                <button class="filter-btn" data-filter="logo">Logo Maker</button>
+            </div>
+        </header>
+
+        <section class="portfolio-grid" id="portfolio-grid">
+            <div class="project-card glass-card" data-category="web"
+                 data-link="https://en.wikipedia.org/wiki/Web_development"
+                 data-desc="Web development is the work involved in developing a website for the Internet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. Core technologies include HTML, CSS, JavaScript, and backend frameworks.">
+                <div class="project-image-box">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Web Dev">
+                </div>
+                <div class="project-details">
+                    <span class="tag">Web Development</span>
+                    <h3>SaaS Platform</h3>
+                    <a href="#" class="view-btn" onclick="event.preventDefault();">View Case <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card glass-card" data-category="design"
+                 data-link="https://en.wikipedia.org/wiki/User_interface_design"
+                 data-desc="User interface (UI) design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with the focus on maximizing usability and the user experience. UX design is the process of creating evidence-based, interaction designs between human users and products.">
+                <div class="project-image-box">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" alt="Design">
+                </div>
+                <div class="project-details">
+                    <span class="tag">Designing</span>
+                    <h3>NFT Marketplace</h3>
+                    <a href="#" class="view-btn" onclick="event.preventDefault();">View Case <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card glass-card" data-category="logo"
+                 data-link="https://en.wikipedia.org/wiki/Logo"
+                 data-desc="A logo is a graphic mark, emblem, or symbol used to aid and promote public identification and recognition. It may be of an abstract or figurative design or include the text of the name it represents as in a wordmark. The term was also used for a uniquely set and arranged typeface or colophon.">
+                <div class="project-image-box">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Logo">
+                </div>
+                <div class="project-details">
+                    <span class="tag">Logo Maker</span>
+                    <h3>Cyber Identity</h3>
+                    <a href="#" class="view-btn" onclick="event.preventDefault();">View Case <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="contact-wrapper" id="contact">
+        <div class="contact-grid">
+            <div class="contact-details">
+                <h1>Let's Start a <span>Project.</span></h1>
+                <p>Form bhariye aur details mere email par bhejiye. Main aapse jald hi contact karunga.</p>
+                
+                <div class="contact-methods">
+                    <a href="https://wa.me/yournumber" class="method-card glass-card">
+                        <i data-lucide="message-circle"></i>
+                        <div>
+                            <span>WhatsApp</span>
+                            <p>Direct Chat</p>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com/yourusername" class="method-card glass-card" target="_blank">
+                        <i data-lucide="instagram"></i>
+                        <div>
+                            <span>Instagram</span>
+                            <p>@yourusername</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form-container glass-card">
+                <form action="/api/contact" method="POST" id="contact-form">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-box">
+                        <select name="service">
+                            <option value="Web Development">Web Development</option>
+                            <option value="UI/UX Design">UI/UX Design</option>
+                            <option value="Logo Maker">Logo Maker</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" id="submit-btn" style="width: 100%; border-radius: 8px;">Send Message ⚡</button>
+                    <p id="form-status" style="margin-top:15px; text-align:center; font-weight:600;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Popup Modal -->
+    <div class="login-modal-overlay" id="login-modal">
+        <div class="login-modal-content glass-card">
+            <button class="close-modal" id="login-close-btn"><i data-lucide="x"></i></button>
+            <h2>Welcome <span>Back.</span></h2>
+            <p>Login to access your premium dashboard.</p>
+            
+            <form action="#" method="POST" class="login-form">
+                <div class="input-box">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-primary" style="margin-top: 1rem; width: 100%; border-radius: 8px;">Sign In ⚡</button>
+            </form>
+            <p class="login-footer">Don't have an account? <a href="#">Create One</a></p>
+        </div>
+    </div>
+
+    <!-- Project About Modal -->
+    <div class="login-modal-overlay" id="project-modal">
+        <div class="login-modal-content glass-card" style="max-width: 650px;">
+            <button class="close-modal" id="project-close-btn"><i data-lucide="x"></i></button>
+            <div id="pm-image-box" style="width:100%; height:280px; border-radius:15px; overflow:hidden; margin-bottom:1.5rem;">
+                <img src="" id="pm-img" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <span class="tag" id="pm-tag" style="display:inline-block; margin-bottom:5px;">Tag Here</span>
+            <h2 id="pm-title" style="margin-top:0.5rem; font-size:2.5rem; font-family:'Syne',sans-serif;">Project Title</h2>
+            <p id="pm-desc" style="color:var(--text-dim); margin: 15px 0; line-height: 1.6;">Discover the detailed case study, challenges overcome, and the aesthetic technologies applied to build this scalable solution. A perfect blend of form and functionality.</p>
+            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                <a href="#" id="pm-link" class="btn-primary" style="display:flex; align-items:center; justify-content:center; gap:8px;" target="_blank">Live Preview <i data-lucide="external-link" style="width:20px;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | IT VALA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="../home/index.html" class="logo">IT VALA<span>.</span></a>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="index.html" class="active">Work</a></li>
+            <li><a href="../home/index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="mob-menu-btn">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <main class="work-section">
+        <header class="work-intro">
+            <h1>Selected Projects<span>.</span></h1>
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="design">Designing</button>
+                <button class="filter-btn" data-filter="logo">Logo Maker</button>
+            </div>
+        </header>
+
+        <section class="portfolio-grid" id="portfolio-grid">
+            <div class="project-card glass-card" data-category="web">
+                <div class="project-image-box">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Web Dev">
+                </div>
+                <div class="project-details">
+                    <span class="tag">Web Development</span>
+                    <h3>SaaS Platform</h3>
+                    <a href="#" class="view-btn">View Case <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card glass-card" data-category="design">
+                <div class="project-image-box">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" alt="Design">
+                </div>
+                <div class="project-details">
+                    <span class="tag">Designing</span>
+                    <h3>NFT Marketplace</h3>
+                    <a href="#" class="view-btn">View Case <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card glass-card" data-category="logo">
+                <div class="project-image-box">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Logo">
+                </div>
+                <div class="project-details">
+                    <span class="tag">Logo Maker</span>
+                    <h3>Cyber Identity</h3>
+                    <a href="#" class="view-btn">View Case <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/work.js"></script>
+</body>
+</html>
