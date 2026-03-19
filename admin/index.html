@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT VALA | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">IT VALA <span>Admin</span></h2>
+            <nav class="side-nav">
+                <a href="#" class="active" data-target="dashboard-view"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+                <a href="#" data-target="messages-view"><i data-lucide="mail"></i> Messages</a>
+                <a href="#" data-target="projects-view"><i data-lucide="folder-git-2"></i> Projects</a>
+                <a href="/"><i data-lucide="globe"></i> Live App</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Admin Control Panel</h1>
+                <div class="user-profile"><i data-lucide="user"></i> Super Admin</div>
+            </header>
+
+            <div class="content-area">
+                <!-- Dashboard View -->
+                <section id="dashboard-view" class="view-section active">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>Total Messages</h3>
+                            <h2 id="total-messages">0</h2>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Total Projects</h3>
+                            <h2 id="total-projects">0</h2>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Messages View -->
+                <section id="messages-view" class="view-section">
+                    <h2><i data-lucide="mail"></i> Contact Submissions</h2>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Date</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Service</th>
+                                    <th>Message</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="messages-table-body">
+                                <!-- Data will inject here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Projects View -->
+                <section id="projects-view" class="view-section">
+                    <div class="section-header">
+                        <h2><i data-lucide="folder-git-2"></i> Portfolio Projects</h2>
+                        <button class="btn-primary" id="open-add-project">Add Project</button>
+                    </div>
+                    
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="projects-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Add Project Modal -->
+    <div class="modal-overlay" id="add-project-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-project-modal"><i data-lucide="x"></i></button>
+            <h2>Add New <span>Project</span></h2>
+            <form id="add-project-form">
+                <input type="text" id="p-title" placeholder="Project Title" required>
+                <select id="p-cat" required>
+                    <option value="web">Web Development</option>
+                    <option value="design">UI/UX Design</option>
+                    <option value="logo">Logo Maker</option>
+                </select>
+                <input type="url" id="p-img" placeholder="Image URL (Unsplash/etc)" required>
+                <input type="url" id="p-link" placeholder="Live Preview URL" required>
+                <textarea id="p-desc" placeholder="Detailed Description (Wiki-style)" rows="4" required></textarea>
+                <button type="submit" class="btn-primary">Save Project</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

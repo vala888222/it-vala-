@@ -1,0 +1,58 @@
+.contact-wrapper {
+    padding-top: 150px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact-details h1 { font-family: 'Syne'; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1; }
+.contact-details h1 span { color: var(--accent); }
+.contact-details p { color: var(--text-dim); margin: 20px 0 40px; font-size: 1.1rem; }
+
+/* Method Cards */
+.contact-methods { display: flex; flex-direction: column; gap: 1rem; }
+.method-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem !important;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.method-card:hover { border-color: var(--accent); transform: translateX(10px); }
+.method-card i { color: var(--accent); width: 30px; height: 30px; }
+.method-card span { font-weight: 700; font-size: 1.1rem; }
+.method-card p { margin: 0; font-size: 0.9rem; }
+
+/* Form Container */
+.contact-form-container { padding: 3rem !important; }
+.input-box { margin-bottom: 1.5rem; }
+.input-box input, .input-box select, .input-box textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+.input-box input:focus, .input-box textarea:focus { border-color: var(--accent); }
+
+.btn-primary { width: 100%; border: none; cursor: pointer; }
+
+@media (max-width: 900px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .contact-wrapper { padding-top: 100px; padding-bottom: 50px; }
+}
